@@ -99,6 +99,8 @@ ul {
 .failed::before {
     content: "\2573";
     color: #eb5851;
+    text-shadow: 0px 1px, 1px 0px, 1px 0px;
+    /* preso direttamente da stackoverflow */
     font-size: 6px;
     border: 1px solid #eb5851;
 }
