@@ -1,4 +1,5 @@
 /* RESET */
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -6,28 +7,35 @@
 }
 
 /* COMMON */
+
 body {
-    background-color:  #f6f8f9;
+    background-color: #f6f8f9;
     font-family: Arial, sans-serif;
 }
+
 /* FINE COMMON */
 
 /* HEADER */
+
 header {
     margin-top: 3px;
     padding: 10px 15px;
     background-color: white;
 }
+
 header * {
     vertical-align: middle;
     margin-left: 20px;
 }
+
 h1 {
     display: inline;
 }
+
 /* FINE HEADER */
 
 /* MAIN */
+
 main {
     margin: 50px auto;
     background-color: white;
@@ -36,34 +44,40 @@ main {
 }
 
 /* Sezione "navbar" */
+
 .navbar {
     padding: 2% 8%;
     border-bottom: 3px solid #f6f8f9;
 }
+
 a {
     display: inline-block;
-    padding: 10px 20px;
+    line-height: 40px;
+    padding: 0 8px;
+    /* text-align: center; */
     border-radius: 5px;
     text-decoration: none;
-    margin: 5px;
+    margin: 4px;
     font-weight: bold;
 }
+
 a.selected {
     color: white;
     background-color: #47adf1;
-    
 }
+
 a.not-selected {
     color: #cacfd4;
     border: 1px solid #cacfd4;
 }
+
 /* Fine "navbar */
 
 section {
     padding: 2% 10%;
-
     margin-top: 30px;
 }
+
 h3::before {
     content: "\25BE";
     font-size: 20px;
@@ -74,20 +88,12 @@ ul {
     padding-top: 10px;
 }
 
-li::before {
-    display: inline-block;
-    text-align: center;
-    line-height: 18px;
-    width: 18px; 
-    border-radius: 50%;
+/* Non sono sicurissimo sia corretto suddividere in questo modo i ::before (spero di sì) */
+.done::before {
     border: 1px solid #64c0a9;
-    margin-right: 5px;
-    vertical-align: middle;
     color: #64c0a9;
-    content: "\2713";
-    font-weight: 900;
     font-size: 10px;
- 
+    content: "\2713";
 }
 
 .failed::before {
@@ -96,7 +102,20 @@ li::before {
     font-size: 6px;
     border: 1px solid #eb5851;
 }
+
+li::before {
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+    font-weight: 900;
+}
+
 /* Lunga sequela di tag: prima caratteristiche comuni, poi vari colori */
+
 .tag {
     border-radius: 35%;
     color: white;
@@ -110,20 +129,27 @@ li::before {
 .tag.editorial {
     background-color: #45abea;
 }
+
 .tag.goal {
     background-color: #9c72e4;
 }
+
 .tag.recruiting {
     background-color: #64c0a9;
 }
+
 .tag.mobile {
     background-color: #f29e33;
 }
+
 .tag.website {
     background-color: #d963a1;
 }
+
 .tag.sales {
     background-color: #b0c926;
 }
+
 /* Fine tag */
+
 /* Fine MAIN */
