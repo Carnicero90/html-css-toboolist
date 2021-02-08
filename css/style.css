@@ -50,7 +50,7 @@ main {
     border-bottom: 3px solid #f6f8f9;
 }
 
-a {
+.action-box {
     display: inline-block;
     line-height: 40px;
     padding: 0 8px;
@@ -61,12 +61,12 @@ a {
     font-weight: bold;
 }
 
-a.selected {
+.action-box.selected {
     color: white;
     background-color: #47adf1;
 }
 
-a.not-selected {
+.action-box.not-selected {
     color: #cacfd4;
     border: 1px solid #cacfd4;
 }
