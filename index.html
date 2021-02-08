@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="strumento di gestione task" />
+    <title>Toboolist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Inizio header -->
+    <header>
+        <img src="img/Logo.png" alt="logo boolean">
+        <h1>Toboolist</h1>
+    </header>
+    <!-- Fine header -->
+
+    <!-- Inizio main -->
+    <main>
+        <!-- qua cè sta sorta di navbar, ma non uso nav perchè non so se qua vada bene  -->
+        <div class="navbar">
+            <a class="selected" href="">Add Task</a>
+            <a class="not-selected" href="">Add Section</a>
+        </div>
+        <!-- fine della sorta di navbar -->
+
+        <!-- Trittico di sezioni, contenenti un titolo e una lista di task -->
+        <!-- Inizio prima sezione -->
+        <section>
+            <h3> New Task</h3>
+            <ul>
+                <li>Quarterly Newsletter <span class="tag editorial">Editorial</span></li>
+            </ul>
+        </section>
+        <!-- Fine prima sezione -->
+        <!-- Inizio seconda sezione -->
+        <section>
+            <h3> Today</h3>
+            <ul>
+                <li>Recruiting blog post <span class="tag editorial">Editorial</span></li>
+                <li>Mobile app launch <span class="tag goal">Q1 Goals</span></li>
+                <li class="failed">Interview Hohn H. <span class="tag recruiting">Recruiting</span></li>
+                <li>Summit update to mobile storefronts <span class="tag mobile">Mobile</span></li>
+
+            </ul>
+        </section>
+        <!-- Fine seconda sezione -->
+
+        <!-- Inizio terza sezione -->
+        <section>
+            <h3> Upcoming</h3>
+            <ul>
+                <li class="failed">Schedule meeting with Alex </li>
+                <li>Homepage refresh <span class="tag website">Website</span></li>
+                <li>Onboard new Sales team members <span class="tag sales">Sales</span></li>
+                <li>Review editor calendar <span class="tag editorial">Editorial</span></li>
+            </ul>
+        </section>
+        <!-- Fine terza sezione -->
+        
+    </main>
+    <!-- Fine main -->
+</body>
+
+</html>
